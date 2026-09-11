@@ -18,17 +18,17 @@ Repository Structure
 ---------------------
 .
 ├── app/
-│   ├── app.py                  
-│   ├── Dockerfile              
-│   ├── docker-compose.yaml     
-│   └── req.txt                 
+│   ├── app.py
+│   ├── Dockerfile
+│   ├── docker-compose.yaml
+│   └── req.txt
 ├── terraform/
-│   ├── ec2.tf                  
-│   ├── provider.tf             
-│   ├── security.tf             
-│   └── outputs.tf              
-├── hosts.ini                   
-├── playbook.yml                
-├── terraform.sh                
-├── deploy.sh                   
-└── README.md                                
+│   ├── ec2.tf
+│   ├── provider.tf
+│   ├── security.tf
+│   └── outputs.tf
+├── hosts.ini
+├── playbook.yml
+├── terraform.sh
+├── deploy.sh
+└── README.md                              
