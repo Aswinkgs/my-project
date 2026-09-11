@@ -16,6 +16,7 @@ Cloud Provider: Amazon Web Services (AWS)
 
 Repository Structure
 -------------------
+```text
 .
 ├── app/
 │   ├── app.py
@@ -32,4 +33,5 @@ Repository Structure
 ├── terraform.sh
 ├── deploy.sh
 └── README.md
+```
                            
