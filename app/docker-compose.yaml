@@ -1,8 +1,7 @@
 services:
-
   app:
     build: .
-    container_name: proj-app
+    container_name: myapp-proj
     ports:
-      - "5000:5000"
+      - "8000:8000"
     restart: unless-stopped

@@ -1,0 +1,49 @@
+---
+- name: Install Docker and Deploy Flask Application
+  hosts: ec2app
+  become: yes
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install Docker and Docker Compose plugin
+      apt:
+        name:
+          - docker.io
+          - docker-compose-v2
+        state: present
+
+    - name: Start and enable Docker service
+      systemd:
+        name: docker
+        enabled: yes
+        state: started
+
+    - name: Add ubuntu user to docker group
+      user:
+        name: ubuntu
+        groups: docker
+        append: yes
+
+    - name: Create app directory on target EC2
+      file:
+        path: /home/ubuntu/app
+        state: directory
+        owner: ubuntu
+        group: ubuntu
+        mode: '0755'
+
+    - name: Copy application files to server
+      copy:
+        src: app/
+        dest: /home/ubuntu/app/
+        owner: ubuntu
+        group: ubuntu
+
+    - name: Build and start container using Docker Compose
+      command: docker compose up -d --build
+      args:
+        chdir: /home/ubuntu/app
