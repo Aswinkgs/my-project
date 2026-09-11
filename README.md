@@ -15,7 +15,7 @@ Application Framework: Python 3.12, Flask
 Cloud Provider: Amazon Web Services (AWS)
 
 Repository Structure
----------------------
+-------------------
 .
 ├── app/
 │   ├── app.py
@@ -31,4 +31,5 @@ Repository Structure
 ├── playbook.yml
 ├── terraform.sh
 ├── deploy.sh
-└── README.md                              
+└── README.md
+                           
