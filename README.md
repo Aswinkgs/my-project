@@ -5,6 +5,7 @@ An end-to-end Infrastructure as Code (IaC) and Configuration Management pipeline
 Prerequisites
 -----------------
 Infrastructure Provisioning: Terraform (v1.x+)
+<<<<<<< HEAD
 Configuration Management: Ansible (v2.15+)
 Container Orchestration: Docker & Docker Compose
 Application Framework: Python 3.12, Flask
@@ -28,3 +29,35 @@ Repository Structure
 ├── terraform.sh                
 ├── deploy.sh                   
 └── README.md                   
+=======
+
+Configuration Management: Ansible (v2.15+)
+
+Container Orchestration: Docker & Docker Compose
+
+Application Framework: Python 3.12, Flask
+
+Cloud Provider: Amazon Web Services (AWS)
+
+Repository Structure
+-------------------
+```text
+.
+├── app/
+│   ├── app.py
+│   ├── Dockerfile
+│   ├── docker-compose.yaml
+│   └── req.txt
+├── terraform/
+│   ├── ec2.tf
+│   ├── provider.tf
+│   ├── security.tf
+│   └── outputs.tf
+├── hosts.ini
+├── playbook.yml
+├── terraform.sh
+├── deploy.sh
+└── README.md
+```
+                           
+>>>>>>> refs/remotes/origin/main
