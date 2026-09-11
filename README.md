@@ -14,6 +14,18 @@ Application Framework: Python 3.12, Flask
 
 Cloud Provider: Amazon Web Services (AWS)
 
+Local Workstation Requirements
+----------------------------------
+Ensure the following CLI tools are installed on your workstation:
+
+AWS CLI: Configured with valid credentials (aws configure)
+
+Terraform CLI: Installed and accessible in your system PATH
+
+Ansible: Installed locally or available via WSL / Python environment
+
+SSH Client: OpenSSH or equivalent terminal client for instance connection
+
 Repository Structure
 -------------------
 ```text
