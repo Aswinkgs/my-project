@@ -15,17 +15,6 @@ Application Framework: Python 3.12, Flask
 Cloud Provider: Amazon Web Services (AWS)
 
 Repository Structure
----------------------
-
-Configuration Management: Ansible (v2.15+)
-
-Container Orchestration: Docker & Docker Compose
-
-Application Framework: Python 3.12, Flask
-
-Cloud Provider: Amazon Web Services (AWS)
-
-Repository Structure
 -------------------
 ```text
 .
