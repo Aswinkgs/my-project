@@ -31,4 +31,4 @@ Repository Structure
 ├── playbook.yml                
 ├── terraform.sh                
 ├── deploy.sh                   
-└── README.md                   
+└── README.md                                
