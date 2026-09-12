@@ -25,6 +25,7 @@ Terraform CLI: Installed and accessible in your system PATH
 Ansible: Installed locally or available via WSL / Python environment
 
 SSH Client: OpenSSH or equivalent terminal client for instance connection
+ls
 
 Repository Structure
 -------------------
