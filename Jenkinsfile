@@ -25,7 +25,7 @@ pipeline {
         stage('Run Ansible') {
             steps {
                 sshagent(credentials: ['ec2-ssh-key']) {
-                    sh 'ansible-playbook -i hosts.ini playbook.yml --ssh-common-args="-o StrictHostKeyChecking=no"'
+                    sh 'ansible-playbook -i hosts.ini my-playbook.yml --ssh-common-args="-o StrictHostKeyChecking=no"'
                 }
             }
         }
