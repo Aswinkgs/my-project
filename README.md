@@ -22,7 +22,7 @@ Ensure the following CLI tools are installed on your workstation:
 - **Git**: For version control and triggering CI/CD builds
 
 ## Repository Structure
-
+```
 .
 ├── app/
 │ ├── app.py
@@ -40,9 +40,9 @@ Ensure the following CLI tools are installed on your workstation:
 ├── terraform.sh
 ├── deploy.sh
 └── README.md
-
+```
 ## Architecture Overview
-
+```
 GitHub Push
 │
 ▼
@@ -54,7 +54,7 @@ Jenkins Pipeline Triggered
 ├── Ansible Playbook → Installs Docker, configures host environment
 │
 └── Docker Compose → Deploys containerized Flask application
-
+```
 
 ## Setup & Deployment
 
